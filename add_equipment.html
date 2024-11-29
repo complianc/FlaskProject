@@ -1,0 +1,42 @@
+<form action="/add" method="post">
+    <label for="registration_no">Registration No.:</label>
+    <input type="text" id="registration_no" name="registration_no" required><br><br>
+
+    <label for="instrument_name">Instrument Name:</label>
+    <input type="text" id="instrument_name" name="instrument_name" required><br><br>
+
+    <label for="maker_manufacturer">Maker/Manufacturer:</label>
+    <input type="text" id="maker_manufacturer" name="maker_manufacturer" required><br><br>
+
+    <label for="model">Model:</label>
+    <input type="text" id="model" name="model" required><br><br>
+
+    <label for="instrument_sr_no">Instrument Serial No.:</label>
+    <input type="text" id="instrument_sr_no" name="instrument_sr_no" required><br><br>
+
+    <label for="range">Range:</label>
+    <input type="text" id="range" name="range"><br><br>
+
+    <label for="resolution_lc">Resolution/LC:</label>
+    <input type="text" id="resolution_lc" name="resolution_lc"><br><br>
+
+    <label for="accuracy">Accuracy:</label>
+    <input type="text" id="accuracy" name="accuracy"><br><br>
+
+    <label for="owner_section_group">Owner Section/Group:</label>
+    <input type="text" id="owner_section_group" name="owner_section_group"><br><br>
+
+    <label for="instrument_location">Instrument Location:</label>
+    <input type="text" id="instrument_location" name="instrument_location"><br><br>
+
+    <label for="calibration_due">Calibration Due Date:</label>
+    <input type="date" id="calibration_due" name="calibration_due" required><br><br>
+
+    <label for="status">Status:</label>
+    <select id="status" name="status" required>
+        <option value="Active">Active</option>
+        <option value="Inactive">Inactive</option>
+    </select><br><br>
+
+    <button type="submit">Add Equipment</button>
+</form>

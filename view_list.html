@@ -1,0 +1,36 @@
+<table>
+    <thead>
+        <tr>
+            <th>Registration No.</th>
+            <th>Instrument Name</th>
+            <th>Maker/Manufacturer</th>
+            <th>Model</th>
+            <th>Instrument Serial No.</th>
+            <th>Range</th>
+            <th>Resolution/LC</th>
+            <th>Accuracy</th>
+            <th>Owner Section/Group</th>
+            <th>Instrument Location</th>
+            <th>Calibration Due</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in equipment %}
+        <tr>
+            <td>{{ item.registration_no }}</td>
+            <td>{{ item.instrument_name }}</td>
+            <td>{{ item.maker_manufacturer }}</td>
+            <td>{{ item.model }}</td>
+            <td>{{ item.instrument_sr_no }}</td>
+            <td>{{ item.range }}</td>
+            <td>{{ item.resolution_lc }}</td>
+            <td>{{ item.accuracy }}</td>
+            <td>{{ item.owner_section_group }}</td>
+            <td>{{ item.instrument_location }}</td>
+            <td>{{ item.calibration_due }}</td>
+            <td>{{ item.status }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
